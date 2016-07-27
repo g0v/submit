@@ -1,7 +1,7 @@
 require! <[request bluebird fs]>
 
 # sample url
-# https://slack.com/api/channels.history?token=xoxp-2546915667-2875565621-58396231078-a946323924&channel=C02G2SXKX
+# https://slack.com/api/channels.history?token=[...your token...]
 # documentation: https://api.slack.com/methods/channels.history
 
 url = \https://slack.com/api/channels.history
