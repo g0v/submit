@@ -93,6 +93,7 @@ slack = do
       else submissions = []
       links = submissions.map(->it.link)
       newSubmissions = newSubmissions.filter(->links.indexOf(it.link) <0)
+      console.log "#{newSubmissions} submissions found. firing issue..."
       fs.write-file-sync \submissions.json, JSON.stringify(submissions ++ newSubmissions)
       bluebird.all [github.issue.fire(item.link, item.text) for item in newSubmissions]
     .then ->
