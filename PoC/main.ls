@@ -6,7 +6,7 @@ require! <[request bluebird fs]>
 
 url = \https://slack.com/api/channels.history
 token = '' # enter your own token
-channel = \C02G2SXKX # general, got from https://api.slack.com/methods/channels.history/test
+channel = \C02G2SXKX # general, got from https://api.slack.com/methods/channels.list/test
 
 result = []
 fetch = (time) -> new bluebird (res, rej) ->
