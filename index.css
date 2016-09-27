@@ -53,7 +53,7 @@ body {
   position: absolute;
 }
 .footer {
-  border-top: 1px solid #ccc;
+  border-top: 5px solid #ce2323;
   max-width: 1024px;
   margin: auto;
   padding-top: 5px;
