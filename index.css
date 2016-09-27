@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   color: #222;
+  font-family: lato, "微軟正黑體";
 }
 #landing {
   padding: 40px 0;
