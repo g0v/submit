@@ -79,7 +79,7 @@ slack = do
       if (!msgs or !msgs.length) and (mintime > limit.0 or limit.0 == \oldest) => mintime = limit.0
 
       messages += msgs.length
-      msgs.filter(->/#submit$|#submit /.exec(it.text)).forEach(->
+      msgs.filter(->/#\s?submit$|#\s?submit /.exec(it.text)).forEach(->
         while true
           ret = urlmatcher.exec it.text
           if !ret => break
