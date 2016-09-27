@@ -1,6 +1,6 @@
 # g0v submit
 
-你有想要讓社群看到的東西嗎？ #submit 吧！
+你有想要讓社群看到的東西嗎？ #submit 吧！更多資訊：[g0v #submit 首頁](http://g0v.github.io/submit/)
 
 
 ## 使用方式
