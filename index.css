@@ -4,4 +4,86 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  color: #222;
+}
+#landing {
+  padding: 40px 0;
+  border-bottom: 10px solid #ce2323;
+}
+#landing h2 {
+  margin-top: -55px;
+  font-size: 2em;
+  color: #444;
+}
+#landing h4 {
+  font-size: 1.2em;
+  color: #444;
+}
+.root {
+  max-width: 1024px;
+  margin: auto;
+  color: #444;
+}
+.root h3 {
+  height: 32px;
+  font-size: 1.2em;
+  background: url("img/h2.png") left center repeat-x;
+  margin-left: 49px;
+  padding-top: 4px;
+  display: inline-block;
+}
+.root h3:before,
+.root h3:after {
+  display: inline-block;
+  content: " ";
+  height: 32px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  margin-top: -4px;
+  vertical-align: middle;
+}
+.root h3:before {
+  background-image: url("img/h1.png");
+  width: 47px;
+  margin-left: -47px;
+}
+.root h3:after {
+  background-image: url("img/h3.png");
+  width: 19px;
+  position: absolute;
+}
+.footer {
+  border-top: 1px solid #ccc;
+  max-width: 1024px;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 0.8em;
+}
+iframe {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+@media (max-width: 1044px) {
+  .root,
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  img {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  #landing h2 {
+    margin-top: -20px;
+  }
+  .footer .lg {
+    display: none;
+  }
 }

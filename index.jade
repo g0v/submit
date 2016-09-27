@@ -1,18 +1,18 @@
 doctype html
 //- basic libraries: jquery(1.10.2), d3js(3.5.4), angularjs(1.3.15), bootstrap(3.0)/semantic-ui(0.9.3/0.9.5)
 //-                  fontawesome(4.4.0), reactjs(0.14.0)
-- var use = { cdn: false, og: false, favicon: true }
+- var use = { cdn: true, og: false, favicon: true }
 - var lib = { jquery: true, d3js: false, angular: true, bootstrap: true, semantic: false, fontawesome: true, reactjs: false }
 - var assets = "assets"
-- var favicon = "thumbnail.png"
+- var favicon = "img/favicon.png"
 - var title = "g0v submit"
 - var og = {}
 - og.title = title
 - og.twitter = {type: "summary_large_image", site: "@zbryikt", creator: "@zbryikt"}
 - og.domain = "g0v.github.io"
 - og.url = ""
-- og.thumbnail = {width: 200, height: 200, type: "image/png"}
-- og.thumbnail.url = "thumbnail.png"
+- og.thumbnail = {width: 1200, height: 630, type: "image/png"}
+- og.thumbnail.url = "img/thumbnail.png"
 - og.author = "zbryikt"
 - og.section = "Taiwan"
 - og.keyword = "zbryikt,submit"
@@ -25,6 +25,53 @@ html(lang="en")
     // libraries
     include library.jade
     // custom files
+    link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css")
     link(rel="stylesheet",type="text/css",href="index.css")
     script(type="text/javascript",src="index.js")
   body
+    #landing.text-center
+      img(src="img/logo.png")
+      h2 自己的稿自己投
+      h4 零時政府揪松團電子報徵稿中
+    .root
+      h3 遊戲規則
+      ol
+        li 登入 g0v 的 Slack 聊天室。若還沒有帳號，可利用 #[a(href="http://join.g0v.today") join.g0v.today] 加入
+        li 在 g0v 的 Slack 群組中，進入 #[a(href="https://g0v-tw.slack.com/messages/general/") #general] 頻道。
+
+        li
+          span 將你想分享的連結貼上，並輸入「#submit」識別用標籤；你也可以附帶一些評論，例如：
+          a(href="https://raw.githubusercontent.com/g0v/submit/gh-pages/img/submit-sample.png",target="_blank")
+            img(src="https://raw.githubusercontent.com/g0v/submit/gh-pages/img/submit-sample.png")
+          br
+          br
+        li 接著，送出留言！
+        li 在 5 ~ 10 分鐘內，你便可以在 #[a(href="https://github.com/g0v/submit/labels/submit") 這裡] 看到你分享的連結。
+      hr
+      h3 然後呢？
+      p 送出以後，揪松電子報小編會挑選並編輯其中的連結，未來便會在揪松電子報中出現囉！
+      hr
+      h3 翻閱電子報
+      p 過往的揪松團電子報可以在 #[a(href="#") 這個連結] 中看到，若你覺得連結不方便記憶，也可以直接在 #[a(href="http://hack.g0v.tw") 揪松網] 下方找到電子報的相關資訊。揪松團電子報使用 Mailchimp 服務發送，欲訂閱電子報請利用下面的訂閱表單：
+      iframe(src="http://g0v.us13.list-manage.com/subscribe?u=688c0f30e2af41c2fa09114f2&id=24c8450e9a")
+      hr
+      h3 其它機制
+      p 若你熟悉 Github 並有 Github 帳號，你也可以直接以建立 Issue 的方式來投稿：
+      ol
+        li 登入 Github
+        li 開啟 #[a(href="https://github.com/g0v/submit/labels/submit") Submit 專案的 Issue 列表]
+        li 點擊右方的「 New Issue 」按鈕建立新 Issue
+        li
+          span 除了投稿連結，也請填入妥善的標題與描述。務必替 Issue 加上黃色的「submit」標籤：
+          img(src="img/issue.png")
+          br
+          br
+        li 接著，將 Issue 送出，便完成投稿囉！
+
+      br
+      .footer
+        span g0v submit project #[a(href="https://raw.githubusercontent.com/g0v/submit/gh-pages/LICENSE"): .label.label-default MIT License]
+        .pull-right
+          span #[i.fui-github.lg] #[a(href="https://github.com/g0v/submit/") Github]
+          span &nbsp;/ 
+          span #[a(href="https://github.com/g0v/submit/issues") #[span.lg Report ]Issues]
