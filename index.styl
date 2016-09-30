@@ -59,6 +59,15 @@ iframe
   height: 500px
   border: 1px solid #999
   border-radius: 3px
+  display: none
+#epaper.show1 li:first-child, #epaper.show2 li:last-child
+  background-color: #fff
+  border: 1px solid #ddd
+  border-bottom-color: transparent
+  color: #555
+  cursor: default
+#epaper.show1 iframe:first-child, #epaper.show2 iframe:last-child
+  display: block
 
 @media (max-width: 1044px)
   .root, .footer
