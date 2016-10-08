@@ -1,4 +1,4 @@
-# g0v submit
+# g0v submit - 揪松團電子報投稿平台
 
 你有想要讓社群看到的東西嗎？ #submit 吧！更多資訊：[g0v #submit 首頁](http://g0v.github.io/submit/)
 
